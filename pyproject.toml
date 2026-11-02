@@ -1,0 +1,30 @@
+# Dev tooling configuration for CredoNomics Cyber Solutions.
+# This file only configures lint/format/type-check tools; it is not a Python
+# package manifest. The application is built from `main.py` / `store_main.py`
+# via the PyInstaller spec (CredoNomics.spec), not from this file.
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+src = ["cyber", "tests", "scripts"]
+extend-exclude = ["build", "dist", "release", "artifacts", ".venv", "third_party", "store-assets"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = ["E501"]  # line length is enforced by the formatter, not the linter
+fixable = ["I"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests intentionally keep several lines long for fixtures/expected output.
+"tests/**/*.py" = ["E501"]
+"scripts/**/*.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+strict_optional = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_configs = true
+no_implicit_reexport = true
+ignore_missing_imports = true
+exclude = ['build/', 'dist/', 'release/', 'artifacts/', '\\.venv/', 'third_party/', 'store-assets/']

@@ -1,0 +1,17 @@
+# Normalize line endings for text files; keep binaries as-is.
+* text=auto
+
+# Binary assets (must never be line-ending normalized / diffed as text)
+*.png binary
+*.ico binary
+*.onnx binary
+*.traineddata binary
+*.avi binary
+*.mp4 binary
+*.exe binary
+*.dll binary
+*.msix binary
+*.appx binary
+*.zip binary
+*.pdf binary
+*.sqlite3 binary

@@ -1,0 +1,10 @@
+{
+  "name": "CredoNomics.CyberSolutions",
+  "publisher": "CN=PARTNER_CENTER_PUBLISHER_ID_REQUIRED",
+  "version": "1.2.0.5",
+  "architecture": "x64",
+  "application_id": "CredoNomicsCyberSolutions",
+  "reserved_in_partner_center": false,
+  "minimum_windows_version": "10.0.19041.0",
+  "maximum_tested_windows_version": "10.0.26300.0"
+}

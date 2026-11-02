@@ -1,0 +1,9 @@
+Copyright © 2026 CredoNomics Investment Solutions.
+
+First-party CredoNomics Cyber Solutions source and documentation are licensed
+under GNU Affero General Public License version 3 only (AGPL-3.0-only).
+The complete license is in LICENSE.
+
+Third-party software, fonts, icons, data and notice texts remain the property
+of their respective copyright holders and retain their original licenses.
+See THIRD_PARTY_NOTICES.md and the preserved upstream notice texts.

@@ -1,0 +1,55 @@
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+# Generated packages and exports
+build/
+dist/
+release/
+FINAL-RELEASE*/
+artifacts/
+smoke-build/
+smoke-dist/
+*.exe
+*.dll
+*.pyd
+*.msix
+*.msixbundle
+*.appx
+*.appxbundle
+*.zip
+*.7z
+*.tar
+*.gz
+# Local secrets, records and editor state
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.sqlite3*
+*.db
+*.license.json
+*.log
+*.tmp
+*.bak
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+# Unapproved model weights are not part of this source distribution
+models/
+*.onnx
+*.pt
+*.pth
+*.safetensors
