@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible problem with the Windows application or source.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do NOT attach private documents, passwords, credentials or sensitive files.
+        Use synthetic examples and redact logs/screenshots. Report vulnerabilities
+        privately to support@credonomics.in; see the security policy.
+  - type: input
+    id: version
+    attributes:
+      label: App or source version
+      description: Include the About version/build, or source commit; say portable or source.
+      placeholder: "Portable 1.2.0 / build 1.2.0.5"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: "Windows 11 x64; include OS build if known"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Describe inputs using synthetic files; include relevant tool/options.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Non-sensitive logs or screenshots
+      description: Optional. Remove usernames, local paths and private document contents.

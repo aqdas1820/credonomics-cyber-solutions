@@ -1,0 +1,28 @@
+name: Feature request
+description: Propose a focused improvement to a document workflow.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic examples. Do NOT attach private documents, passwords, credentials or sensitive files."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is difficult in your current workflow?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed behavior
+      description: Describe the result you would like.
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case
+      description: Who would use this, and how often? Include alternatives if useful.
+    validations:
+      required: true
